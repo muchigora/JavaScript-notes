@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Populating Arrays</title>
+</head>
+<body>
+    <div class="containers">
+
+        <div class="title-contents">
+            <h1>
+                Populating Arrays
+            </h1>
+        </div>
+
+        <div class="content-details">
+            <h3>Indexes</h3>
+            <div>
+                <ul>
+                    <li>You can access an array by referring to an index position you want to add the elemnt to</li>
+                    <li>if an element already exists  at that index position, it will be overwritten</li>
+                    <li>using the <em>length property</em> allows us to add item to the end of the array</li>
+                </ul>
+
+                <div>
+                    <h4>Adding Batman movies to index position 1</h4>
+                    <code>
+                        let movies = ['Caddyshack', 'Interstellar', 'Scarface']; <br>
+                        movies[1] = "Batman";
+                    </code>
+                    <p> The new array will be:</p>
+                    <p id="index-1-demo"> </p>
+                </div>
+
+                <div>
+                    <h4>Adding Item beyond current length </h4>
+                    <p>We will demonstrate this point using a index position 10, knowing our array has up to 3 index positions</p>
+                    <code>
+                        let movies = ['Caddyshack', 'Interstellar', 'Scarface']; <br>
+                        movies[10] = "Shrek";
+                    </code>
+                    <p> The new array will be:</p>
+                    <p id="index-2-demo"> </p>
+                    <p>We create a number of empty elements between the previous last element and the newly created one. What exactly is an empty element?</p>
+                </div>
+
+                <div>
+                    <h4>What exactly is an empty element?</h4>
+                    <p>After adding a movie on 10th index, indexes 3 through 9 are empty</p>
+                    <code>
+                        console.log(movies[4]);
+                    </code>
+                    <p> What does an empty index return?:</p>
+                    <p id="index-3-demo"> </p>
+                    <p>We create a number of empty elements between the previous last element and the newly created one. </p>
+                </div>
+
+
+            </div>
+
+                
+        </div>
+
+    </div>
+ 
+    <!-- java script code  -->
+    <script>
+        //Adding Batman movies to index position 1
+        let movies = ['Caddyshack', 'Interstellar', 'Scarface'];
+        movies[1] = "Batman";
+        document.getElementById('index-1-demo').innerHTML = movies;
+
+        //Adding Item beyond current length
+        movies[10] = "Shrek";
+        document.getElementById('index-2-demo').innerHTML = movies;
+
+        document.getElementById('index-3-demo').innerHTML = movies[4];
+
+    </script>
+
+</body>
+</html>

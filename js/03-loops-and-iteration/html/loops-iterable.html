@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping through iterables</title>
+</head>
+<body>
+    <div class="containers">
+
+        <!-- page title details  -->
+        <div class="title-contents">
+            <h1>
+                for Loops: <br> Looping through iterables
+            </h1>
+        </div>
+
+         <!-- content details  -->
+        <div class="content-details">
+            <h3>What is an Iterator?</h3>
+            <p>an iterator is an object that can be used to loop though iterable sata, like strings, arrays, etc</p>
+            <p>
+                an iterator is an object that provides a way to access the elements of a container or collection sequentially, without exposing the underlying implementation details of the container
+            </p>
+            <p>
+                It allows you to iterate or loop through the elements of a collection, such as an array, list, or set, in a specific order.
+            </p>
+            <p>
+                The concept of iterators is closely associated with the iterator design pattern, which separates the algorithm for traversing a collection from the collection itself. By using iterators, you can iterate over a collection without worrying about its internal structure or representation.
+            </p>
+
+            <div>
+                <div class="code">
+                    <code>
+                        let myArray = [1, 2, 3, 4, 5]; <br>
+                        let iterator = myArray[Symbol.iterator]();  // Create an iterator from the array <br>
+
+                        // Iterate over the elements using a loop <br>
+                        for (let element of iterator) { <br>
+                        console.log(element); <br>
+                        }
+                    </code>
+                </div>
+            </div>
+
+          
+        
+        </div>
+    <!-- javascript section  -->
+        <script src="../js/02-looping-through-iterables.js"></script>
+</body>
+</html>

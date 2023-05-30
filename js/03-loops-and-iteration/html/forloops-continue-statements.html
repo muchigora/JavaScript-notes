@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in..of loos and continue statements</title>
+</head>
+<body>
+    <div class="containers">
+
+        <!-- page title details  -->
+        <div class="title-contents">
+            <h1>
+                for Loops:
+            </h1>
+            <h3>
+                <ul>
+                    <li>for...in loops</li>
+                    <li>for...of loops</li>
+                    <li>continue statements</li>
+                </ul>
+            </h3>
+        </div>
+
+         <!-- content details  -->
+        <div class="content-details">
+
+            <!-- for ... in Loops  -->
+            <div>
+                <div class="title-contents">
+                    <h3>
+                        for...in Loop
+                    </h3>
+                </div>
+                <div>
+                    <p>
+                        The for...in statement iterates through a set of enumerable properties of an object using a specified variable <br>
+                        For each distinct property, JavaScript executes the statements defined within the loop.
+                    </p>
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; flex-grow: 2; border: 1px solid;">
+                        <div class="code" style="border: 1px solid;">
+                            <code>
+                                // for of loop looping though objects: <br>
+                                    const person = {firstName: 'John',  <br> 
+                                                    lastName: 'Doe',  <br>
+                                                    age: 30 <br>
+                                                }; <br>
+                                    let value = ""; <br>
+                                    for(let key in person){ <br>
+                                        value += person[key] + " "; <br>
+                                        console.log(value) <br>
+                                    }  
+                            </code>                                 
+                        </div>
+                        <div>
+                            <p>
+                                result code
+                            </p>
+                            <p id="for-in-object"></p>                            
+                        </div>
+                        <div  style="border: 1px solid;">
+                            <h4>Example Notes</h4>
+                            <ul>
+                                <li>the <b>for in</b> loop iterates over a person object</li>
+                                <li>each iteration returns a <b>key</b> </li>
+                                <li>each key is used to access the <b>value</b>  of the key</li>
+                                <li>the <em>value</em> of the key is <b>person[key]</b></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- forEach Loop  -->
+            <div id="for-each-loop">
+                <div class="title-contents">
+                    <h3>
+                        forEach Loop
+                    </h3>
+                </div>
+                <div>
+                    <div class="syntax">
+                        <code>
+                            array.forEch()
+                        </code>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- for of loop  -->
+            
+
+          
+
+       
+        </div>
+
+     <!-- javascript section  -->
+     <script src="../js//04-continue-statements-in-for-loops.js">
+        
+     </script>
+    
+</body>
+</html>

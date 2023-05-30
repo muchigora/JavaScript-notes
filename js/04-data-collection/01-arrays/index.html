@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Intro</title>
+</head>
+<body>
+    <div class="containers">
+
+        <div class="title-contents">
+            <h1>
+                Arrays Intro
+            </h1>
+        </div>
+
+        <div class="content-details">
+            <div class="syntax">
+                <h3>Syntax:</h3>
+                <div class="code">
+                    <code>
+                        let array = [item-0, item-1, item-2, item-3]
+                        <br>
+                        let cars = ["Saab", "Volvo", "Audi", "BMW", "Mercedes", "Chevrolet", "]
+                    </code>
+                </div>
+            </div>
+
+            <div>
+                <h3>What are Arrays?</h3>
+                <ul>
+                    <li>A special type of variable that can hold more than one data value</li>
+                    <li>Technically, arrays in JS are <b>objects</b> , made up of a list with keys of "0", "1", etc called indexes, first index is [o]:</li>
+                        <ul>
+                            <li>Arrays are a special type of objects. The <code>typeof</code>  operator in JavaScript returns "object" for arrays.</li>
+                        </ul>
+                    <li>Contain <b>elements</b>, which can be 0 or more</li>
+                    <li>Each <em>element</em> in and array can hold <b><em>any data types</em></b> including objects, functions, even other arrays.</li>
+                    <li>Arrays elements are <b>ordered</b></li>
+                    <li>Good practice is to name arrays variables in plural form, e.g., <code>let <b>colors</b> = ['red', 'green', 'blue'];</code></li>
+                </ul>
+            </div>
+
+
+            <!-- creating arrays in JavaScript  -->
+
+            <div>
+                <h3>How to create Arrays:</h3>
+                <div>
+                    <h4>Array Literal Syntax:</h4>
+                    <code>
+                        let nums = [item-0, item-1, item-2, item-3]
+                    </code>
+                    <p>this method is reccommended as best practice</p>
+                    <p>pros od Array literal method:
+                        <ul>
+                            <li>simplicity</li>
+                            <li>readability</li>
+                            <li>execution speed</li>
+                    </p>
+                </div>
+                <div>
+                    <h4>Using a Class or Constructor function:</h4>
+                    <code>
+                        let nums = new Array(4,5,6);
+                        <br>
+                        let nums = Array(7,8,9);
+                    </code>
+                    <p>This synatx is less common in JavaScript</p>
+                </div>
+            </div>
+
+            <!-- working with arrays  -->
+            <div>
+                <h3>Working with Arrays:</h3>
+                <ol>
+                    <li><a href="./working-with-array/accessing.html"></a></li>
+                    <li><a href="./working-with-array/populating.html"></a></li>
+                    <li><a href="./working-with-array/length.html"></a></li>
+                </ol>
+            </div>
+
+           
+                
+        </div>
+
+    </div>
+ 
+    <script src="./app.js">
+
+    </script>
+
+</body>
+</html>

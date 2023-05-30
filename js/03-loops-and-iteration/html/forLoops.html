@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loops</title>
+</head>
+<body>
+    <div class="containers">
+
+        <!-- page title details  -->
+        <div class="title-contents">
+            <h1>
+                for Loops
+            </h1>
+        </div>
+
+         <!-- content details  -->
+        <div class="content-details">
+
+            <p>
+                For loops are typically used to perform a task a set number of times. <br>
+                A for loop will repeat until a specified condition evaluates to false
+                
+            </p>
+
+            <div class="syntax">
+                for (initialization; condition; afterthrough) { <br>
+                statements
+            </div>
+
+            <h4>
+                Steps:
+            </h4>
+            <div class="code">
+                <code>
+                    for(let i=0; i<10; i++){ <br> 
+                        console.log(i); <br>
+                    }
+                </code>
+            </div>
+            <ol>
+                <li>
+                    initialization expression or initialization: 
+                        <code>
+                            let i = 0;
+                        </code>
+                    <ul>
+                        <li>initializes one or more loop counters</li>
+                        <li>the syntax allows an expression of any degree of complexity</li>
+                        <li>can also declare variables</li>
+                        <li>initialization 
+                            <code>
+                            let i = 0;
+                            </code> 
+                            is executed before the loop starts</li>
+                    </ul>
+                </li>
+                <li>
+                    the condition exppression is evaluted:
+                    <code>
+                        i < 10;
+                    </code>
+                    <ul>
+                        <li>defines the confition for running the loop</li>
+                        <li>if condition is true, the loop statements executes</li>
+                        <li>if false the loop terminates</li>
+                    </ul>
+                </li>
+                <li>
+                    afterthought is executed, if present
+                        <code>
+                            i++
+                        </code>
+                        <ul>
+                            <li>executed after each time the loop has been executed</li>
+                        </ul>
+                </li>
+                <li>
+                    control returns to step 2
+                    <code>
+                        i < 10
+                    </code>
+                </li>
+                <li></li>
+            </ol>
+
+            <p>
+                The for loop tests the condition given before the execution of each loop. As long as it evaluates to true, the loop will run again. When the condition evaluates to false, the loop exits and the program continues. At the end of each loop, the for loop executes the afterthought, which should push the loop further towards its conditional statement returning false.
+            </p>
+            
+
+        </div>
+
+        <!-- javascript section  -->
+        <script src="../js/03-forLoops.js"></script>
+    </div>
+    
+</body>
+</html>
