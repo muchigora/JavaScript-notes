@@ -1,7 +1,12 @@
 /**
  * FUNCTION:
  * defined with the function key word
- * defined using:
+ * the basic function of a function is tie together lines of code, ans give you one executable unit that has its own name
+ * the name of a function is then used to invoke the function.
+ * Once invoked, all the units of code in a function are executed.
+ * defined in tow ways
+ * 1. function declaration
+ * 2. function expression
  */
 
 
