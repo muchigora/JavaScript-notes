@@ -25,3 +25,4 @@ let newVar = 20;
 function passBy2(x){
     x = x * 10;
 }
+
