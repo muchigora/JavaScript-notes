@@ -6,21 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
-    <h1 id="newId" class="main-title">DOM Practicxe</h1>
+  <body onload="alert('Welcome to My Home Page!')">
+    <h1 id="heading" class="main-title">DOM Practicxe</h1>
 
-    <p class="cool">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum
-      sapiente suscipit magnam molestias rem magni adipisci temporibus illo
-      mollitia explicabo, quisquam corporis quod obcaecati officiis provident
-      quidem iste tempora?
-    </p>
+    <div class="container">
 
-    <ul id="comments">
-      <li class="comment">first comment</li>
-      <li class="comment">second comment</li>
-      <li class="comment">third comment</li>
-    </ul>
+      <!--IMAGE ELEMENT-->
+      <img src="images/img1.pgn" alt="image" height="170", width="400">
+
+      <p class="cool">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum
+        sapiente suscipit magnam molestias rem magni adipisci temporibus illo
+        mollitia explicabo, quisquam corporis quod obcaecati officiis provident
+        quidem iste tempora?
+      </p>
+  
+      <p id="intro">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quam modi totam sequi commodi suscipit, error, itaque earum blanditiis porro voluptatum voluptas rem. Possimus, illo voluptates consequatur et culpa facere?
+      </p>
+  
+      <ul id="comments">
+        <li class="comment">first comment</li>
+        <li class="comment">second comment</li>
+        <li class="comment">third comment</li>
+      </ul>
+  
+      <div class="list">
+        <h2>Section Topics</h2>
+        <ul>
+          <li>Accessing DOM element</li>
+          <li>Modifying DOM element</li>
+          <li>Adding new DOM element</li>
+          <li>Removing existing DOM element</li>
+        </ul>
+      </div>
+
+    </div>
 
     <!--JS-->
     <script src="app.js"></script>
