@@ -5,14 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <h1 id="heading" class="main-title">DOM Practicxe</h1>
+    <div class="header" id="head">
+      <h1>
+        JavaScript DOM and DOM Manipulation
+      </h1>
+    </div>
 
     <div class="container">
 
       <!--IMAGE ELEMENT-->
-      <img src="./images/img1.png" alt="image" height="450", width="400">
+      <img src="./images/img1.png" alt="image" height="140", width="400">
+
+      <!--A HEADING ELEMENT WIOTH id = heading-->
+      <h1 id="heading">
+        JavaScript Course
+      </h1>
+
+      
 
       <p class="cool">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum
@@ -45,9 +57,55 @@
         </ul>
       </div>
 
+      <div class="form">
+        <h2 id="registration">Registration Form</h2>
+        <form action="">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your Name.." value="John" onfocus="this.style.backgroundColor = 'yellow'" onblur="this.style.backgroundColor='white'">
+
+          <label for="lname">Last Name</label>
+          <input type="text" name="lastname" id="lname" placeholder="Your last name .." value="Smith">
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Your email ..." value="johnsmith@gmail.com">
+
+          <label for="country">Country</label>
+          <select name="country" id="country">
+            <option value="australia">Australia</option>
+            <option value="canada" >Canada</option>
+            <option value="usa" selected>USA</option>
+          </select>
+
+          <label for="gender">Gender:</label>
+          <input type="radio" name="gender" id="male" value="male" checked>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female" >
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" value="other" >
+          <label for="other">Other</label>
+
+          <br>
+          <br>
+
+          <label>Hobbies <i>(Optional)</i></label>
+          <div class="form-inline">
+            <label><input type="checkbox" name="hobbies[]" value="sports" checked>Sports </label>
+            <label><input type="checkbox" name="hobbies[]" value="movies" >Movies</label>
+            <label><input type="checkbox" name="hobbies[]" value="music" checked>Music</label>
+          </div>
+
+          <input type="submit" value="submit" id="btn">
+          
+
+        </form>
+      </div>
+
+
     </div>
 
     <!--JS-->
-    <script src="app.js"></script>
+    <script src="./js-script/02-modifying-elements.js"></script>
+    <script src="./js-script/03-form-datas-collection.js"></script>
+    <script src="./js-script/05-events-and-handlers.js"></script>
   </body>
 </html>
