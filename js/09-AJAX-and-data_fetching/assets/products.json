@@ -1,0 +1,34 @@
+{
+    "arrayOfproducts": [
+        {
+            "imgUrl": "images/lenovo_laptop.jpeg",
+            "name": "Nokia PureBook X14 Cire i5 10th Gen",
+            "price": 57990,
+            "description": "Bring home the powerful and stylish"
+        },
+        {
+            "imgUrl": "images/ASUS_image.jpeg",
+            "name": "ASUS ROG Zephyrus G14 Ryzen 9 Octa Core 490",
+            "price": 108990,
+            "description": "ASUS ROG Zephyrus G14 Ryzen 9 Octa"
+        },
+        {
+            "imgUrl": "images/acer_image.jpeg",
+            "name": "Acer Aspire 7 Ryzen 5 qUAD cORE 3550H",
+            "price": 50990,
+            "description": "Acer Asore 7 is a sleekand pro..."
+        },
+        {
+            "imgUrl": "images/ASUS_image2.jpeg",
+            "name": "ASUS Vivobook Gaming Core i5 9th Gen",
+            "price": 54990,
+            "description": "This ASUS gaming laptop"
+        },
+        {
+            "imgUrl": "images/acer_image3.jpeg",
+            "name": "Acer Aspire7 Core 9th Gen",
+            "price": 53990,
+            "description": "If you are looking for stylish ..."
+        }
+    ]
+}
