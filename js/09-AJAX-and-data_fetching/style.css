@@ -2,3 +2,9 @@ alert{
     background-color: black;
     color: white;
 }
+
+.product{
+    width: 60%;
+    height: fit-content;
+    background-color: aliceblue;
+}

@@ -41,6 +41,7 @@ function getProducts(){
     xhr.onload = function(){
         // convert JSON data to JS Object, use JSON.parse() method
         let products = JSON.parse(xhr.responseText);
+        //destructure a JS Object to a JS Array
         let {arrayOfproducts}=products;      
         // console.log(arrayOfproducts); 
         
