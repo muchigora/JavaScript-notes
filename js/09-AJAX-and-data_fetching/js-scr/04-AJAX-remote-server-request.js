@@ -18,19 +18,20 @@ function getCountry(countryName){
         // console.log(xhr.responseText); //test data in console
         //convert JSON Data to JavaScript Object
         let [data] = JSON.parse(xhr.responseText);
-        // let countryData = data[0]
+        let countryData = data;
         
         console.log(data);
+      
 
         //create html template for diplaying this data
         let html = `
             <article class="country">
-                <img class="country_img" src="${data.flags}"/>
+                <img class="country_img" src="${data.flags.png}"/>
                 <div class="country_data">
-                    <h3 class="country_name">${data.name}</h3>
+                    <h3 class="country_name">${data.name.official}</h3>
                     <h4 class="country_region">${data.region}</h4>
                     <p class="country_row"><span class="ion-ios-people"></span>${data.population}</p>
-                    <p class="country_row"><span class="ion-ios-mic">${data.languages}</span>
+                    <p class="country_row"><span class="ion-ios-mic">${data.languages.eng}</span>
                     <p class="country_row"><span class="ion-social-usd>${data.currencies}</span>
                 </div>
             </article>
@@ -39,3 +40,7 @@ function getCountry(countryName){
     });
 }
 getCountry("usa")
+getCountry("zimbabwe")
+getCountry("spain")
+getCountry("mexico")
+getCountry("nigeria")

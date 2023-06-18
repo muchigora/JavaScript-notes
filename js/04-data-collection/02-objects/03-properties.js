@@ -85,7 +85,7 @@ const myObj = {
       {name:"Fiat", models:["500", "Panda"]}
     ]
   } 
-//   console.log(myObj);
+  console.log(myObj);
 
   for(let i in myObj.cars){
     let carName = myObj.cars[i].name;
